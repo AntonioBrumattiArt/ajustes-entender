@@ -197,6 +197,9 @@ def main():
         print(f"Peca estatica {img.width}x{img.height}. Leia a imagem direto.")
         return
 
+    if not os.path.exists(a.entrada):
+        print(f"ERRO: arquivo nao encontrado: {a.entrada}. No Git Bash, passe o caminho no formato Windows (D:\\...).")
+        return 1
     info = probe(a.entrada)
     fps, dur = info.get("fps") or 25, info["duracao"]
 

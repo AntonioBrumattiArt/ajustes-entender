@@ -22,7 +22,7 @@ Se faltar a V1 ou o pedido, peça antes de começar. Se o pedido citar uma tela/
 
 ## Fluxo
 
-Os scripts ficam em `scripts/` desta skill. Rode com `py` (Windows) ou `python3`. Precisam de ffmpeg no PATH e Pillow/numpy. Salve tudo que gerar numa pasta de trabalho do projeto (`assets\claude-assets\ajustes-<nome>` se houver estrutura de projeto; senão uma pasta temporária). Nunca grave por cima dos arquivos do usuário.
+Os scripts ficam em `scripts/` desta skill. Rode com `py` (Windows) ou `python3`. No Git Bash, passe caminhos de arquivo e de saída no formato Windows (`D:\...`), nunca `/d/...` — o Python do Windows não entende esse formato. Precisam de ffmpeg no PATH e Pillow/numpy. Salve tudo que gerar numa pasta de trabalho do projeto (`assets\claude-assets\ajustes-<nome>` se houver estrutura de projeto; senão uma pasta temporária). Nunca grave por cima dos arquivos do usuário.
 
 ### 1. Ler o pedido primeiro
 
